@@ -1,0 +1,80 @@
+const About = () => {
+	return (
+		<div className='grid gap-8 max-w-7xl text-2xl font-thi text-justify'>
+			<Heading />
+			<Opening />
+			<MyStart />
+			<Technologies />
+			<Closing />
+		</div>
+	);
+};
+
+export default About;
+{
+	/* <span className="opacity-100 font-bold"></span> */
+}
+
+const Heading = () => {
+	return (
+		<div className='text-5xl border-b border-primary pb-4 font-normal'>
+			a little about me...
+		</div>
+	);
+};
+
+const Opening = () => {
+	return (
+		<div>
+			I am a self-taught web developer who fell in love with the power of code.
+			I learned{' '}
+			<span className='text-primary text-3xl font-normal'>
+				{' '}
+				JavaScript (ES6+){' '}
+			</span>{' '}
+			and the basics of web development on my own, and quickly became fascinated
+			by the endless possibilities it offered. I learned through books, online
+			tutorials, and most importantly, through practice.
+		</div>
+	);
+};
+
+const MyStart = () => {
+	return (
+		<div>
+			I got my start in web development by starting my own web design company,
+			where I honed my skills and learned the ins and outs of building websites
+			for small businesses. Through my experience, I've learned that the key to
+			a successful website is not just great design, but also a strong
+			understanding of the technologies behind it.
+		</div>
+	);
+};
+const Technologies = () => {
+	return (
+		<div>
+			I specialize in utilizing{' '}
+			<span className='text-primary text-3xl font-normal'>
+				NextJS, React, TailwindCSS, and Framer-Motion{' '}
+			</span>
+			to build high-performance web applications. These technologies allow me to
+			create dynamic and visually appealing websites with great user experience.
+			I also optimize websites for real-world results by utilizing
+			<span className='text-primary text-3xl font-normal'>
+				{' '}
+				SEO strategies{' '}
+			</span>{' '}
+			to improve website visibility and drive more traffic.
+		</div>
+	);
+};
+
+const Closing = () => {
+	return (
+		<div>
+			I'm always looking for new challenges and opportunities to expand my
+			skills, so if you're in need of a web developer who is equal parts
+			designer and coder, look no further.
+		</div>
+	);
+};
