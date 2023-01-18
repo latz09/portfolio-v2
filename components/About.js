@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<div className='grid gap-8 max-w-7xl text-2xl font-thi text-justify'>
+		<div className='grid gap-4 lg:gap-8 max-w-7xl text-xl lg:text-2xl font-thi text-justify'>
 			<Heading />
 			<Opening />
 			<MyStart />
@@ -17,7 +17,7 @@ export default About;
 
 const Heading = () => {
 	return (
-		<div className='text-5xl border-b border-primary pb-4 font-normal'>
+		<div className='text-4xl lg:text-5xl border-b border-primary pb-4 font-normal'>
 			a little about me...
 		</div>
 	);
@@ -28,7 +28,7 @@ const Opening = () => {
 		<div>
 			I am a self-taught web developer who fell in love with the power of code.
 			I learned{' '}
-			<span className='text-primary text-3xl font-normal'>
+			<span className='text-primary text-2xl lg:text-3xl font-normal'>
 				{' '}
 				JavaScript (ES6+){' '}
 			</span>{' '}
@@ -54,13 +54,13 @@ const Technologies = () => {
 	return (
 		<div>
 			I specialize in utilizing{' '}
-			<span className='text-primary text-3xl font-normal'>
+			<span className='text-primary text-2xl lg:text-3xl font-normal'>
 				NextJS, React, TailwindCSS, and Framer-Motion{' '}
 			</span>
 			to build high-performance web applications. These technologies allow me to
 			create dynamic and visually appealing websites with great user experience.
 			I also optimize websites for real-world results by utilizing
-			<span className='text-primary text-3xl font-normal'>
+			<span className='text-primary text-2xl lg:text-3xl font-normal'>
 				{' '}
 				SEO strategies{' '}
 			</span>{' '}
