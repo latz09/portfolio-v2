@@ -25,7 +25,7 @@ const Heading = () => {
 
 const Opening = () => {
 	return (
-		<div>
+		<div className="scale-95 opacity-80">
 			I am a self-taught web developer who fell in love with the power of code.
 			I learned{' '}
 			<span className='text-primary text-xl lg:text-2xl font-normal'>
@@ -41,7 +41,7 @@ const Opening = () => {
 
 const MyStart = () => {
 	return (
-		<div>
+		<div className="scale-95 opacity-80">
 			I got my start in web development by starting my own web design company,
 			where I honed my skills and learned the ins and outs of building websites
 			for small businesses. Through my experience, I've learned that the key to
@@ -52,14 +52,20 @@ const MyStart = () => {
 };
 const Technologies = () => {
 	return (
-		<div>
+		<div className="lg:border-x-2 px-4 border-primary scale-105 my-2 lg:my-0">
 			I specialize in utilizing{' '}
 			<span className='text-primary text-xl lg:text-2xl font-normal'>
 				NextJS, React, TailwindCSS, and Framer-Motion{' '}
 			</span>
 			to build high-performance web applications. These technologies allow me to
 			create dynamic and visually appealing websites with great user experience.
-			I also optimize websites for real-world results by utilizing
+			Additionally, I have experience working with various{' '}
+			<span className='text-primary text-xl lg:text-2xl font-normal'>
+				APIs and MongoDB
+			</span>
+			, allowing me to craft dynamic and data-driven websites that can easily
+			connect and interact with various platforms and services. I also optimize
+			websites for real-world results by utilizing
 			<span className='text-primary text-xl lg:text-2xl font-normal'>
 				{' '}
 				SEO strategies{' '}
@@ -71,7 +77,7 @@ const Technologies = () => {
 
 const Closing = () => {
 	return (
-		<div>
+		<div className="scale-95 opacity-80">
 			I'm always looking for new challenges and opportunities to expand my
 			skills, so if you're in need of a web developer who is equal parts
 			designer and coder, look no further.
