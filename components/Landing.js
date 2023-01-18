@@ -4,13 +4,13 @@ const Landing = () => {
 			<div className='grid gap-1'>
 				<div className='text-xl lg:text-2xl text-primary'>Hi, my name is</div>
 				<div className='grid gap-4 '>
-					<div className='text-8xl lg:text-9xl'>Jordan Latz</div>
-					<div className='text-4xl lg:text-5xl opacity-70'>
+					<div className='text-5xl lg:text-7xl'>Jordan Latz</div>
+					<div className='text-3xl lg:text-4xl opacity-70'>
 						I build Custom Websites for local businesses
 					</div>
 				</div>
 			</div>
-			<div className='text-xl lg:text-2xl tracking-normal leading-9 opacity-70 max-w-4xl text-justify'>
+			<div className='text-lg lg:text-xl tracking-normal lg:leading-9 opacity-70 max-w-4xl text-justify'>
 				Self-taught and driven, I took the road less traveled and started
 				building websites for local businesses through my own web design company
 				to gain real-world experience. Now, I'm ready to join a team of
@@ -22,7 +22,7 @@ const Landing = () => {
 				target='_blank.'
 				rel='noreferrer'
 			>
-				<div className='text-lg lg:text-xl text-primary font-semibold my-4 '>
+				<div className='text-base lg:text-lg text-primary font-semibold my-4 '>
 					<span className='border p-4 border-primary'> LatzWebDesign.com</span>
 				</div>
 			</a>
