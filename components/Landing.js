@@ -3,7 +3,7 @@ const Landing = () => {
 		<div className=' grid gap-8 tracking-wider '>
 			<div className='grid gap-1'>
 				<div className='text-xl lg:text-2xl text-primary'>Hi, my name is</div>
-				<div className='grid gap-4 '>
+				<div className='grid gap-2 lg:gap-4 '>
 					<div className='text-5xl lg:text-7xl'>Jordan Latz</div>
 					<div className='text-3xl lg:text-4xl opacity-70'>
 						I build Custom Websites for local businesses
@@ -22,8 +22,8 @@ const Landing = () => {
 				target='_blank.'
 				rel='noreferrer'
 			>
-				<div className='text-base lg:text-lg text-primary font-semibold my-4 '>
-					<span className='border p-4 border-primary'> LatzWebDesign.com</span>
+				<div className='text-base lg:text-lg text-primary font-semibold lg:my-4 '>
+					<span className='border p-2 lg:p-4 border-primary'> LatzWebDesign.com</span>
 				</div>
 			</a>
 		</div>
