@@ -3,7 +3,7 @@ import ButtonLink from './utils/ButtonLink';
 
 const Landing = () => {
 	return (
-		<div className=' grid gap-6 tracking-wider max-w-4xl mx-auto '>
+		<div className=' grid gap-6 tracking-wider max-w-4xl mx-auto  '>
 			<Greeting />
 			<Intro />
 
@@ -17,12 +17,12 @@ export default Landing;
 const Greeting = () => {
 	return (
 		<div className='grid gap-4 text-primary'>
-			<div className='text-xl lg:text-4xl text-primary/70 '>
+			<div className='text-2xl lg:text-4xl text-primary/70 '>
 				Hi, my name is{' '}
-				<span className='text-2xl lg:text-5xl font-semibold text-primary/90 '>Jordan </span>
+				<span className='text-3xl lg:text-5xl font-semibold text-primary/90 '>Jordan </span>
 			</div>
 
-			<div className='text-2xl lg:text-5xl text-primary/90 tracking-wide '>
+			<div className='text-3xl lg:text-5xl text-primary/90 tracking-wide '>
 				I build Custom Websites for local businesses
 			</div>
 		</div>

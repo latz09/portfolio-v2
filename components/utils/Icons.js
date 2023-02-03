@@ -29,7 +29,7 @@ const Icons = () => {
 					<motion.div
                         initial={{ opacity: 0, y: 100 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.2, duration: 0.5 }}
+                        transition={{ delay: index * 0.2, duration: 0.7 }}
                     >
 						<Icon key={index} icon={icon} />
 					</motion.div>
