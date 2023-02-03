@@ -24,17 +24,22 @@ const Icons = () => {
 	];
 	return (
 		<div className=''>
-			<div className='grid grid-cols-8 place-items-center'>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 1, duration: 0.7 }}
+				className='grid grid-cols-8 place-items-center'
+			>
 				{icons.map((icon, index) => (
 					<motion.div
-                        initial={{ opacity: 0, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.2, duration: 0.7 }}
-                    >
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ delay: index * 0.2, duration: 0.7 }}
+					>
 						<Icon key={index} icon={icon} />
 					</motion.div>
 				))}
-			</div>
+			</motion.div>
 		</div>
 	);
 };
@@ -42,5 +47,9 @@ const Icons = () => {
 export default Icons;
 
 const Icon = ({ icon }) => {
-	return <span className='text-2xl md:text-3xl lg:text-4xl text-primary'>{icon}</span>;
+	return (
+		<span className='text-2xl md:text-3xl lg:text-4xl text-primary'>
+			{icon}
+		</span>
+	);
 };

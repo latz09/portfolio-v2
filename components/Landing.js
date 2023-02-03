@@ -1,5 +1,6 @@
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 import ButtonLink from './utils/ButtonLink';
+import { motion } from 'framer-motion';
 
 const Landing = () => {
 	return (
@@ -22,9 +23,13 @@ const Greeting = () => {
 				<span className='text-3xl lg:text-5xl font-semibold text-primary/90 '>Jordan </span>
 			</div>
 
-			<div className='text-3xl lg:text-5xl text-primary/90 tracking-wide '>
+			<motion.div className='text-3xl lg:text-5xl text-primary/90 tracking-wide '
+			initial={{ opacity: .2,  }}
+			animate={{ opacity: 1,  }}
+			transition={{ delay: 1, duration: 2 }}
+			>
 				I build Custom Websites for local businesses
-			</div>
+			</motion.div>
 		</div>
 	);
 };
