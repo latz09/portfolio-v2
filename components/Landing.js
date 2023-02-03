@@ -1,39 +1,74 @@
+import { BsArrowRightCircleFill } from 'react-icons/bs';
+import ButtonLink from './utils/ButtonLink';
+
 const Landing = () => {
 	return (
-		<div className=' grid gap-8 tracking-wider max-w-4xl mx-auto '>
-			<div className='grid gap-1'>
-				<div className='text-xl lg:text-2xl text-primary'>Hi, my name is</div>
-				<div className='grid gap-2 lg:gap-4 '>
-					<div className='text-5xl lg:text-7xl'>Jordan Latz</div>
-					<div className='text-3xl lg:text-4xl opacity-70 '>
-						I build Custom Websites for local businesses
-					</div>
-				</div>
-			</div>
-			<div className='text-lg lg:text-xl tracking-normal lg:leading-9  text-justify mr-8 '>
-				Self-taught and driven, I took the road less traveled and started
-				building websites for local businesses through my own web design company
-				to gain real-world experience. Now, I'm ready to join a team of
-				professionals and elevate my skills to new heights, or depths, whichever
-				is more impressive.
-			</div>
-			<a
-				href='https://www.latzwebdesign.com/'
-				target='_blank.'
-				rel='noreferrer'
-				className=''
-			>
-				<div className='text-base lg:text-lg font-semibold lg:my-4 '>
-					<span className=' p-2 bg-primary uppercase  text-light  lg:p-4 '> LatzWebDesign.com</span>
-				</div>
-			</a>
-		
-		
-			
+		<div className=' grid gap-6 tracking-wider max-w-4xl mx-auto '>
+			<Greeting />
+			<Intro />
+
+			<ButtonContainer />
 		</div>
 	);
 };
 
 export default Landing;
 
-// started freelanace to gain experience to work for a company - ultimate goal - self taught
+const Greeting = () => {
+	return (
+		<div className='grid gap-4 text-primary'>
+			<div className='text-xl lg:text-4xl text-primary/70 '>
+				Hi, my name is{' '}
+				<span className='text-2xl lg:text-5xl font-semibold text-primary/90 '>Jordan </span>
+			</div>
+
+			<div className='text-2xl lg:text-5xl text-primary/90 tracking-wide '>
+				I build Custom Websites for local businesses
+			</div>
+		</div>
+	);
+};
+
+const Intro = () => {
+	return (
+		<div>
+			<span className='text-lg lg:text-xl tracking-normal lg:leading-9  text-justify'>
+				Self-taught and driven, I took the road less traveled and started
+				building websites for local businesses through my own web design company
+				to gain real-world experience. Now, I'm ready to join a team of
+				professionals and elevate my skills to new heights, or depths, whichever
+				is more impressive.
+			</span>
+			<div className=' w-fit'>
+				<LatzWebDesignLink />
+			</div>
+		</div>
+	);
+};
+
+const LatzWebDesignLink = () => {
+	return (
+		<a
+			href='https://www.latzwebdesign.com/'
+			target='_blank.'
+			rel='noreferrer'
+			className='flex text-secondary space-x-2 items-center text-lg lg:text-xl py-2 font-semibold opacity-70 hover:opacity-100 hover:scale-y-50 transition duration-700 '
+		>
+			<span> LatzWebDesign.com</span>
+			<span className=' text-xl lg:text-2xl text-secondary'>
+				{' '}
+				<BsArrowRightCircleFill />
+			</span>
+		</a>
+	);
+};
+
+const ButtonContainer = () => {
+	return (
+		<div className=' place-self-center lg:place-self-end flex space-x-8 tracking-wider'>
+			<ButtonLink href='/about-me' title='More About Me' />
+
+			<ButtonLink href='/projects' title='Recent Designs' type='primary' />
+		</div>
+	);
+};
