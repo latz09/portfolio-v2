@@ -73,7 +73,7 @@ const ButtonContainer = () => {
 		<div className=' place-self-center lg:place-self-end flex space-x-8 tracking-wider'>
 			<ButtonLink href='/about-me' title='More About Me' />
 
-			<ButtonLink href='/projects' title='Recent Designs' type='primary' />
+			<ButtonLink href='/recent-work' title='Recent Designs' type='primary' />
 		</div>
 	);
 };
