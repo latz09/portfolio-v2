@@ -20,13 +20,16 @@ const Greeting = () => {
 		<div className='grid gap-4 text-primary'>
 			<div className='text-2xl lg:text-4xl text-primary/70 '>
 				Hi, my name is{' '}
-				<span className='text-3xl lg:text-5xl font-semibold text-primary/90 '>Jordan </span>
+				<span className='text-3xl lg:text-5xl font-semibold text-primary/90 '>
+					Jordan{' '}
+				</span>
 			</div>
 
-			<motion.div className='text-3xl lg:text-5xl text-primary/90 tracking-wide '
-			initial={{ opacity: .2,  }}
-			animate={{ opacity: 1,  }}
-			transition={{ delay: 1, duration: 2 }}
+			<motion.div
+				className='text-3xl lg:text-5xl text-primary/90 tracking-wide '
+				initial={{ opacity: 0.2 }}
+				animate={{ opacity: 1 }}
+				transition={{ delay: 1, duration: 2 }}
 			>
 				I build Custom Websites for local businesses
 			</motion.div>
@@ -37,13 +40,14 @@ const Greeting = () => {
 const Intro = () => {
 	return (
 		<div>
-			<span className='text-lg lg:text-xl tracking-normal lg:leading-9  text-justify'>
+			<div className='text-lg lg:text-xl tracking-normal lg:leading-9  text-justify'>
 				Self-taught and driven, I took the road less traveled and started
-				building websites for local businesses through my own web design company
+				building websites for local businesses through{' '}
+				<span className="font-semibold"> my own web design company </span>
 				to gain real-world experience. Now, I'm ready to join a team of
 				professionals and elevate my skills to new heights, or depths, whichever
 				is more impressive.
-			</span>
+			</div>
 			<div className=' w-fit'>
 				<LatzWebDesignLink />
 			</div>
@@ -57,10 +61,10 @@ const LatzWebDesignLink = () => {
 			href='https://www.latzwebdesign.com/'
 			target='_blank.'
 			rel='noreferrer'
-			className='flex text-secondary space-x-2 items-center text-lg lg:text-xl py-2 font-semibold opacity-70 hover:opacity-100 hover:scale-y-50 transition duration-700 '
+			className='flex text-secondary space-x-2 items-center text-lg lg:text-xl py-2 font-semibold opacity-90 hover:opacity-100 hover:scale-y-50 transition duration-700 '
 		>
 			<span> LatzWebDesign.com</span>
-			<span className=' text-xl lg:text-2xl text-secondary'>
+			<span className=' text-xl lg:text-2xl '>
 				{' '}
 				<BsArrowRightCircleFill />
 			</span>

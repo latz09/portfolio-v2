@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import ContactModal from '../utils/ContacModal';
+import ModalContainer from '../utils/ModalContainer';
 
 const Navbar = () => {
 	return (
@@ -35,10 +37,7 @@ const NavLinks = () => {
 			title: 'my work',
 			href: '/recent-work',
 		},
-		{
-			title: 'get in touch',
-			href: '/',
-		},
+	
 	];
 	return (
 		<div className='flex space-x-8 text-lg lg:text-2xl'>
@@ -50,6 +49,9 @@ const NavLinks = () => {
 					<Link href={link.href}>{link.title}</Link>
 				</div>
 			))}
+			<ModalContainer buttonTitle='get in touch'>
+				<ContactModal />
+			</ModalContainer>
 		</div>
 	);
 };
