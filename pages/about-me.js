@@ -1,11 +1,21 @@
 import About from '@/components/About';
+import ButtonLink from '@/components/utils/ButtonLink';
 
 const AboutMe = () => {
 	return (
 		<div className='grid pb-20  gap-8  bg-dark '>
 			<Blurb />
-            <Intro />
+			<Intro />
 			<About />
+			<div className=' grid place-items-center'>
+				<div className='w-1/4 text-center'>
+					<ButtonLink
+						href={'/recent-work'}
+						title={'View Some of My Recent Work'}
+						type={'primary'}
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };
@@ -26,8 +36,8 @@ const Intro = () => {
 const Blurb = () => {
 	return (
 		<div className='text-4xl h-[60vh] grid place-items-center  text-center text-teriary max-w-3xl mx-auto  leading-9'>
-			I craft beautiful, custom-made, and optimized
-			websites to deliver tangible results for businesses.
+			I craft beautiful, custom-made, and optimized websites to deliver tangible
+			results for businesses.
 		</div>
 	);
 };

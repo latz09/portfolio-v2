@@ -93,9 +93,9 @@ const Description = ({ description,  name,  tech }) => {
 const Links = ({ github, siteUrl }) => {
     
 	return (
-		<div className='flex justify-around items-center '>
+		<div className='flex justify-around items-center space-x-8 lg:space-x-0'>
 			<a
-				className=' p-3 lg:p-4  shadow hover:scale-95 transition duration-700 font-bold rounded  hover:shadow-lg text-primary bg-teriary hover:bg-teriary/80  w-1/3 text-center'
+				className=' p-3 lg:p-4  shadow hover:scale-95 transition duration-700 font-bold rounded  hover:shadow-lg text-primary bg-teriary hover:bg-teriary/80  w-2/3 lg:w-1/3 text-center'
 				href={siteUrl}
 				target='_blank.'
 				rel='noreferrer'
@@ -103,7 +103,7 @@ const Links = ({ github, siteUrl }) => {
 				<span>Visit Site Here</span>
 			</a>
 			<a
-				className='p-3 lg:p-4  shadow hover:scale-95 transition duration-700 font-bold rounded  hover:shadow-lg text-light bg-primary  hover:bg-primary/80 w-1/3 text-center '
+				className='p-3 lg:p-4  shadow hover:scale-95 transition duration-700 font-bold rounded  hover:shadow-lg text-light bg-primary  hover:bg-primary/80 w-2/3 lg:w-1/3 text-center '
 				href={github}
 				target='_blank.'
 				rel='noreferrer'

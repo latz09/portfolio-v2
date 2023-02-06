@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<div className='grid  gap-2 text-xl  leading-9 text-justify text-light max-w-4xl mx-auto tracking-wide scale-105'>
+		<div className='grid px-4 lg:px-0  gap-2 text-lg lg:text-xl  lg:leading-9 text-justify text-light max-w-4xl mx-auto tracking-wide '>
 			<Opening />
 			<MyStart />
 			<Technologies />
