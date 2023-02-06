@@ -8,7 +8,7 @@ const AboutMe = () => {
 			<Intro />
 			<About />
 			<div className=' grid place-items-center'>
-				<div className='w-1/4 text-center'>
+				<div className='w-4/5 lg:w-1/4 text-center'>
 					<ButtonLink
 						href={'/recent-work'}
 						title={'View Some of My Recent Work'}
