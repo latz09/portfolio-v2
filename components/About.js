@@ -56,7 +56,7 @@ const Technologies = () => {
 		<div className=''>
 			I specialize in utilizing{' '}
 			<span className=' text-teriary font-bold text-xl lg:text-2xl '>
-				NextJS, React, TailwindCSS, and Framer-Motion{' '}
+				NextJS, React, TailwindCSS, Framer-Motion, and the power of JavaScript{' '}
 			</span>
 			to build high-performance web applications. These technologies allow me to
 			create dynamic and visually appealing websites with great user experience.
