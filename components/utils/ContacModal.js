@@ -48,7 +48,7 @@ const ContactForm = () => {
 
 const SocialIcons = () => {
 	return (
-		<div className=' flex justify-around lg:justify-between lg:w-1/2 lg:mx-auto'>
+		<div className=' flex w-full justify-around lg:justify-between lg:w-1/2 mx-auto'>
 			<a
 				href='https://github.com/latz09'
 				target='_blank'
