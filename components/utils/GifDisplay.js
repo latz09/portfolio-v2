@@ -16,15 +16,15 @@ const GifDisplay = ({}) => {
 			<div className='text text-3xl text-primary border-b border-primary pb-2'>
 				Recent Work
 			</div>
-		
-				<div className='grid grid-cols-3 gap-4 place-items-baseline opacity-90 hover:opacity-100 transition duration-700 my-8 '>
-					{gifs.map((gif, index) => (
-						<div key={index} className="grid place-items-center shadow-xl">
-							<Image src={gif} alt='' />
-						</div>
-					))}
-				</div>
-		
+
+			<div className='grid grid-cols-3 gap-4 place-items-baseline opacity-90 hover:opacity-100 transition duration-700 my-8 '>
+				{gifs.map((gif, index) => (
+					<div key={index} className='grid place-items-center shadow-xl'>
+						<Image src={gif} alt='' priority=' true' />
+					</div>
+				))}
+			</div>
+
 			<div className='grid place-items-center'>
 				<ButtonLink
 					href={'/recent-work'}
