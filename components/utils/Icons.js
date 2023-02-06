@@ -32,6 +32,7 @@ const Icons = () => {
 			>
 				{icons.map((icon, index) => (
 					<motion.div
+					key={index}
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ delay: index * 0.2, duration: 0.7 }}

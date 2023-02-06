@@ -1,7 +1,9 @@
+import Navbar from "./Navbar";
+
 const MainLayout = ({ children }) => {
 	return (
 		<div className='flex flex-col'>
-			<div className="bg-dark p-6 lg:p-8"></div>
+			<Navbar />
 			<main className='flex-grow'>{children}</main>
             <div></div>
 		</div>
