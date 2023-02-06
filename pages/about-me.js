@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import ButtonLink from '@/components/utils/ButtonLink';
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
 	return (
@@ -35,9 +36,13 @@ const Intro = () => {
 
 const Blurb = () => {
 	return (
-		<div className='text-4xl h-[60vh] grid place-items-center  text-center text-teriary max-w-3xl mx-auto  leading-9'>
+		<motion.div className='text-4xl h-[60vh] grid place-items-center  text-center text-teriary max-w-3xl mx-auto  leading-9'
+		initial=	{{ opacity: .2, y: 20 }}
+		animate={{ opacity: 1, y: 0 }}
+		transition={{ duration: 1.8, delay: .4 }}
+		>
 			I craft beautiful, custom-made, and optimized websites to deliver tangible
 			results for businesses.
-		</div>
+		</motion.div>
 	);
 };

@@ -1,10 +1,20 @@
+import WhileInViewWrapper from './utils/animations/WhileInViewWrapper';
+
 const About = () => {
 	return (
 		<div className='grid px-4 lg:px-0  gap-2 text-lg lg:text-xl  lg:leading-9 text-justify text-light max-w-4xl mx-auto tracking-wide '>
-			<Opening />
-			<MyStart />
-			<Technologies />
-			<Closing />
+			<WhileInViewWrapper>
+				<Opening />
+			</WhileInViewWrapper>
+			<WhileInViewWrapper>
+				<MyStart />
+			</WhileInViewWrapper>
+			<WhileInViewWrapper>
+				<Technologies />
+			</WhileInViewWrapper>
+			<WhileInViewWrapper>
+				<Closing />
+			</WhileInViewWrapper>
 		</div>
 	);
 };
@@ -13,14 +23,6 @@ export default About;
 {
 	/* <span className="opacity-100 font-bold"></span> */
 }
-
-const Heading = () => {
-	return (
-		<div className='text-2xl lg:text-3xl border-b border-primary pb-4 font-normal'>
-			a little about me...
-		</div>
-	);
-};
 
 const Opening = () => {
 	return (
@@ -59,8 +61,10 @@ const Technologies = () => {
 			to build high-performance web applications. These technologies allow me to
 			create dynamic and visually appealing websites with great user experience.
 			Additionally, I have experience working with various{' '}
-			<span className=' text-teriary font-bold text-xl lg:text-2xl '>APIs and MongoDB</span>,
-			allowing me to craft dynamic and data-driven websites that can easily
+			<span className=' text-teriary font-bold text-xl lg:text-2xl '>
+				APIs and MongoDB
+			</span>
+			, allowing me to craft dynamic and data-driven websites that can easily
 			connect and interact with various platforms and services. I also optimize
 			websites for real-world results by utilizing
 			<span className=' text-teriary font-bold text-xl lg:text-2xl '>
