@@ -14,9 +14,8 @@ const ContactModal = () => {
 		<div className='grid gap-16 py-8 place-items-center '>
 			<SocialIcons />
 			<ContactForm />
-			
-				<ContactInfo />
-			
+
+			<ContactInfo />
 		</div>
 	);
 };
@@ -25,8 +24,8 @@ export default ContactModal;
 
 const ContactInfo = () => {
 	return (
-		<div className='flex justify-around w-full tracking-widest'>
-			<div className='flex space-x-4 text-lg'>
+		<div className='grid gap-2 place-items-center lg:flex justify-around w-full tracking-widest'>
+			<div className='flex items-center space-x-4 text-lg'>
 				<span className='social-icons '>
 					<AiOutlinePhone />
 				</span>
@@ -44,10 +43,11 @@ const ContactInfo = () => {
 
 const ContactForm = () => {
 	return (
-		<motion.div className='place-self-center'
-		 initial={{ opacity: 0, scale: 0 }}
-		 animate={{ opacity: 1, scale: 1 }}
-		 transition={{ duration: 1, delay: .5 }}
+		<motion.div
+			className='place-self-center'
+			initial={{ opacity: 0, scale: 0 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 1, delay: 0.5 }}
 		>
 			<CalendlyLink />
 		</motion.div>

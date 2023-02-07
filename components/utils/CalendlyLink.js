@@ -9,7 +9,7 @@ const CalendlyLink = () => {
 				target='_blank'
 				rel='noreferrer'
 			>
-				<div className='flex items-center space-x-8'>
+				<div className='grid gap-4 place-items-center lg:flex items-center lg:space-x-8'>
 					<motion.div className='text-8xl'
                         initial={{ scale: .96, y:3  }}
                         animate={{  scale: 1, y:0 }}
