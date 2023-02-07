@@ -56,7 +56,7 @@ const WebsiteCard = ({
 						<ImageDisplay images={images} imageAlt={imageAlt} />
 					</motion.div>
 				</div>
-				<div className='flex flex-col justify-between gap-8 mx-4 lg:mx-0 text-center lg:text-justify'>
+				<div className='flex flex-col justify-between gap-8 mx-4 lg:mx-0 text-start lg:text-justify'>
 					<Description
 						description={description}
 						tech={tech}
