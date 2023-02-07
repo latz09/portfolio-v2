@@ -96,7 +96,11 @@ const Description = ({ description, name, tech }) => {
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{ delay: 0.2, duration: 1.2 }}
 			>
-				{description}
+				<div className="grid gap-2">
+					{description.map((desc, index) => (
+						<span key={index}>{desc}</span>
+					))}
+				</div>
 			</motion.div>
 			<div className='grid grid-cols-3 bg-dark/10 p-3 place-items-center lg:place-items-start'>
 				{tech.map((tech, index) => (

@@ -23,9 +23,9 @@ const CalendlyLink = () => {
 						<GiCoffeeCup />
 					</motion.div>
 					<div className='grid gap-4 place-items-center'>
-						<span className=''> Set up a time for a virtual coffee</span>
+						<span className=''> Set up a time for a virtual coffee!</span>
 						<span className='bg-light px-8 py-2 text-dark text-2xl rounded-xl shadow hover:bg-opacity-60 hover:text-primary/70 transition duration-700'>
-							Set it up!{' '}
+							View Calendar{' '}
 						</span>
 					</div>
 				</div>
@@ -58,9 +58,9 @@ export const CalendlyLinkTwo = () => {
 						<GiCoffeeCup />
 					</motion.div>
 					<div className='grid gap-4 place-items-center'>
-						<span className=''> Set up a time for a virtual coffee</span>
+						<span className=''> Set up a time for a virtual coffee!</span>
 						<span className='bg-primary text-light px-8 py-2  text-2xl rounded-xl shadow hover:bg-primary/50 hover:text-light transition duration-700'>
-							Set it up!{' '}
+							View Calendar{' '}
 						</span>
 					</div>
 				</div>
