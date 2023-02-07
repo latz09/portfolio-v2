@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const RecentWorkDisplay = () => {
 	return (
-		<div className='grid gap-24 text-light'>
+		<div className='grid gap-24 text-light mb-24'>
 			{websites.map((website, index) => (
 				<motion.div
 					key={index}
