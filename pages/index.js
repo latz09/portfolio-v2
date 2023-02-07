@@ -7,7 +7,7 @@ import gif from '../public/images/gifs/movie-connection.gif';
 
 export default function Home() {
 	return (
-		<div className=' grid gap-12 my-12 lg:my-24  max-w-7xl mx-4 lg:mx-auto  '>
+		<div className='grid  gap-12 my-12 lg:my-24  max-w-7xl mx-4 lg:mx-auto  '>
 			<Landing />
 			<Icons />
 		</div>

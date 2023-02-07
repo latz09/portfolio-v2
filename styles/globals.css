@@ -20,6 +20,6 @@ body {
 		@apply bg-primary/70 backdrop-blur rounded-lg  h-[90vh] w-[95vw] lg:my-[15vh] lg:h-[75vh] lg:w-[75vw] mx-auto;
 	}
 	.social-icons {
-		@apply text-4xl;
+		@apply text-3xl;
 	}
 }

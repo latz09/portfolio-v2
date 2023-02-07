@@ -6,13 +6,17 @@ import {
 	AiOutlineTwitter,
 } from 'react-icons/ai';
 import { SiPolywork } from 'react-icons/si';
+import CalendlyLink from './CalendlyLink';
+import { motion } from 'framer-motion';
 
 const ContactModal = () => {
 	return (
-		<div className='grid gap-16 py-8 place-items-center  '>
+		<div className='grid gap-16 py-8 place-items-center '>
 			<SocialIcons />
-			<ContactInfo />
-			{/* <ContactForm /> */}
+			<ContactForm />
+			
+				<ContactInfo />
+			
 		</div>
 	);
 };
@@ -21,14 +25,14 @@ export default ContactModal;
 
 const ContactInfo = () => {
 	return (
-		<div className='grid gap-4 tracking-widest'>
-			<div className='flex space-x-4 text-light/80'>
+		<div className='flex justify-around w-full tracking-widest'>
+			<div className='flex space-x-4 text-lg'>
 				<span className='social-icons '>
 					<AiOutlinePhone />
 				</span>
 				<span>{`(715) 630 5689`}</span>
 			</div>
-			<div className='flex space-x-4 text-light/80'>
+			<div className='flex space-x-4 text-lg'>
 				<span className='social-icons '>
 					<AiOutlineMail />
 				</span>
@@ -40,9 +44,13 @@ const ContactInfo = () => {
 
 const ContactForm = () => {
 	return (
-		<div className='place-self-center'>
-			<div>contact form</div>
-		</div>
+		<motion.div className='place-self-center'
+		 initial={{ opacity: 0, scale: 0 }}
+		 animate={{ opacity: 1, scale: 1 }}
+		 transition={{ duration: 1, delay: .5 }}
+		>
+			<CalendlyLink />
+		</motion.div>
 	);
 };
 
