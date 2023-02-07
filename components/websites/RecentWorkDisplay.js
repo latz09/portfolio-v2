@@ -102,9 +102,9 @@ const Description = ({ description, name, tech }) => {
 					))}
 				</div>
 			</motion.div>
-			<div className='grid grid-cols-3 bg-dark/10 p-3 place-items-center lg:place-items-start'>
+			<div className='grid grid-cols-3 text-sm lg:text-base bg-dark/10 p-2 place-items-center lg:place-items-start'>
 				{tech.map((tech, index) => (
-					<span key={index} className=' font-semibold tracking-widest'>
+					<span key={index} className=' font-semibold lg:tracking-widest'>
 						{tech}
 					</span>
 				))}
