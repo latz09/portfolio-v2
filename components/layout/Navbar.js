@@ -16,7 +16,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Logo = () => {
+export const Logo = () => {
 	return (
 		<Link href={'/'}>
 			<div className='flex space-x-1 border-y lg:py-2 border-y-teriary opacity-70 font-mono text-3xl lg:text-4xl text-light font-bod borer border-primary/50 hover:opacity-100 hover:scale-105 transition duration-700 cursor-pointer'>

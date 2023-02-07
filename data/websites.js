@@ -21,7 +21,7 @@ export const websites = [
 		gif: movieConnectionGif,
 		url: 'https://movie-connection.vercel.app/',
 		description: [
-			'This website uses the IMDB API to allow users to search for any movie, providing movie details, such as actors, genres, length, and even allows you to watch different clips from the selected movie.',
+			'This website uses the IMDB API to allow users to search for any movie, to provide movie details; such as actors, genres, length, and even allows you to watch different clips from the selected movie.',
 			'Once the user has found the desired movie, the website provides recommendations for similar movies based on the selected movie.',
 			'The design is clean and smooth, allowing for easy/comfortable horizontal scrolling of movie options.',
 		],
@@ -47,8 +47,8 @@ export const websites = [
 		gif: livinglandscapesGif,
 		url: 'https://livingspacelandscapes.vercel.app/',
 		description: [
-			'This website is designed to tell the story of a landscaping company that specializes in Japanese style gardening and also incorporating stones and boulders for an aesthetically pleasing and meaningful end result.',
-			'The website utilizes an array of visuals to depict lush, natural gardens, featuring designs that capture the essence of Japanese gardens.',
+			'This website is designed to tell the story of a landscaping company that specializes in Japanese style gardening while also incorporating stones and boulders for an aesthetically pleasing and meaningful end result.',
+			'The website utilizes an array of visuals to depict natural gardens that features designs that capture the essence of Japanese gardens.',
 			'Experienced professionals from the company will help homeowners bring their visions to life with skilled consulting.',
 			'The website also features a portfolio of projects completed by the company, so visitors can get an idea of what they can expect from the company.',
 		],
@@ -87,7 +87,8 @@ export const websites = [
 		url: 'https://justpaws.vercel.app/',
 		description: [
 			'This website design for a pet salon was created with the user experience in mind. Its focus was to provide a complete overview of the salon’s services and pricing.  ',
-			'The design is modern and user-friendly, allowing customers to easily navigate the site.  Additionally, an interactive pricing module was create to allow users to select prices and services based on different animal sizes.',
+			'The design is modern and user-friendly, allowing customers to easily navigate the site.',
+			'Additionally, an interactive pricing module was create to allow users to select prices and services based on different animal sizes.',
 			'Overall, the design was created to deliver the pet salon services in an accessible and intuitive way.',
 		],
 		tech: ['React', 'Javascript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
@@ -108,7 +109,7 @@ export const websites = [
 			'This website for a plumbing company was designed with the user experience in mind.  It is easy to navigate and visually stimulating, making it enjoyable to scroll through.',
 			'Some Features of the website design include a unique color palette, engaging visual animations and a cohesive layout.  ',
 			'The website also includes informative content about the plumbing services the company offers, such as drain cleaning, pipe replacement, and fixture installation.',
-			'This website design was created to provide a positive experience for visitors and to educate them about the services the company provides.',
+			'This design was created to provide a positive experience for visitors and to educate them about the services the company provides.',
 		],
 		tech: ['Javascript', 'React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
 		images: {
@@ -126,7 +127,7 @@ export const websites = [
 		url: 'https://picture-perfect.vercel.app/',
 		description: [
 			'This website was designed for an art framing company.  It highlights the company’s services and experience in the field, while also allowing users to easily browse through the different categories of framing they offer.',
-			'It provides a clean and easy-to-navigate platform that leads users through all the different services they provide while providing users with an enjoyable and informative experience, making it a perfect solution for the framing company.',
+			'It provides a clean and easy-to-navigate platform that leads users through all the different services they provide, while providing users with an enjoyable and informative experience, making it a perfect solution for the framing company.',
 		],
 		tech: ['React', 'Javascript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
 		images: {
