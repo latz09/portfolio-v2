@@ -15,9 +15,7 @@ export default function Home() {
 			<div className='text-xl place-self-center my-16'>
 				<CalendlyLinkTwo />
 			</div>
-			<div className="place-self-center">
-				<ResumeDownload />
-			</div>
+		
 		
 		</div>
 	);
