@@ -79,6 +79,7 @@ const ImageDisplay = ({ images, imageAlt }) => {
 				alt={imageAlt}
 				width={images.desktop.width}
 				height={images.desktop.height}
+				priority={true}
 			/>
 		</div>
 	);

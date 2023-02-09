@@ -8,14 +8,15 @@ import {
 import { SiPolywork } from 'react-icons/si';
 import CalendlyLink from './CalendlyLink';
 import { motion } from 'framer-motion';
+import ResumeDownload from './ResumeDowload';
 
 const ContactModal = () => {
 	return (
 		<div className='grid gap-16 py-8 place-items-center '>
 			<SocialIcons />
 			<ContactForm />
-
 			<ContactInfo />
+			
 		</div>
 	);
 };
@@ -36,6 +37,9 @@ const ContactInfo = () => {
 					<AiOutlineMail />
 				</span>
 				<span>{`jordan@latzwebdesign.com`}</span>
+			</div>
+			<div className="my-4 lg:my-0">
+				<ResumeDownload />
 			</div>
 		</div>
 	);

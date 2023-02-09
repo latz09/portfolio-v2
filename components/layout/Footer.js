@@ -3,6 +3,7 @@ import Link from 'next/link';
 import ContactModal from '../utils/ContacModal';
 import ModalContainer from '../utils/ModalContainer';
 import { MdArticle } from 'react-icons/md';
+import ResumeDownload from '../utils/ResumeDowload';
 
 const Footer = () => {
 	return (
@@ -45,6 +46,9 @@ const FooterNavLinks = () => {
 					<Link href={link.href}>{link.title}</Link>
 				</div>
 			))}
+			<div className=" opacity-80 tracking-wider hover:opacity-100 transition duration-700">
+				<ResumeDownload />
+			</div>
 			<ModalContainer buttonTitle='get in touch'>
 				<ContactModal />
 			</ModalContainer>
