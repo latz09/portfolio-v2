@@ -1,6 +1,7 @@
 import { websites } from '@/data/websites';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import IconFilter from '../utils/IconFilter';
 
 const RecentWorkDisplay = () => {
 	return (
@@ -71,6 +72,8 @@ const WebsiteCard = ({
 	);
 };
 
+
+
 const ImageDisplay = ({ images, imageAlt }) => {
 	return (
 		<div className='shadow-xl shadow-teriary/40 grid place-items-cente'>
@@ -88,8 +91,13 @@ const ImageDisplay = ({ images, imageAlt }) => {
 const Description = ({ description, name, tech }) => {
 	return (
 		<div className='grid gap-4 borde'>
-			<div className=' text-xl lg:text-2xl font-semibold border-b pb-1 border-light/70 lg:pb-2'>
-				{name}
+			<div className=' text-xl lg:text-2xl font-semibold border-b pb-1 border-light/70 lg:pb-2 flex items-center justify-between'>
+				<span>{name}</span>
+				<span>
+					<IconFilter name={name} />
+				</span>
+				
+				
 			</div>
 			<motion.div
 				className='text-lg lg:text-xl py-2'
