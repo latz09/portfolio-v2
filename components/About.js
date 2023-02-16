@@ -35,7 +35,7 @@ const Opening = () => {
 			</span>{' '}
 			and the basics of web development on my own, and quickly became fascinated
 			by the endless possibilities it offered. I learned through books, online
-			tutorials, and most importantly, through practice.
+			tutorials, a six month Bootcamp and most importantly, through practice.
 		</div>
 	);
 };
