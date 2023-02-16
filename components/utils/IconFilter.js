@@ -41,13 +41,19 @@ const IconFilter = ({ name }) => {
 				{name === 'Good Guys Plumbing' && (
 					<span className=' text-[#F69C32] '>
 						{' '}
-						<MdPlumbing />
+					
 					</span>
 				)}
 				{name === 'Picture Perfect Art and Frame' && (
 					<span className=' text-[#FB212F] '>
 						{' '}
 						<GiWoodFrame />
+					</span>
+				)}
+				{name === 'Erik Nelson Plumbing' && (
+					<span className=' text-[#DB3D3C] '>
+						{' '}
+						<MdPlumbing />
 					</span>
 				)}
 			</motion.div>

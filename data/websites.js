@@ -13,8 +13,30 @@ import justPawsPhone from '../public/images/projects/just-paws/phone.jpg';
 import justPawsGif from '../public/images/gifs/just-paws.gif';
 import picturePerfectDesktop from '../public/images/projects/picture-perfect/desktop.jpg';
 import picturePerfectPhone from '../public/images/projects/picture-perfect/phone.jpg';
+import erikNelsonDesktop from '../public/images/projects/erik-nelson/desktop.jpg';
+import erikNelsonPhone from '../public/images/projects/erik-nelson/phone.jpg';
 
 export const websites = [
+	{
+		name: 'Living Space Landscapes',
+		featured: true,
+		gif: livinglandscapesGif,
+		url: 'https://www.livingspacelandscapes.com/',
+		description: [
+			'This website is designed to tell the story of a landscaping company that specializes in Japanese style gardening while also incorporating stones and boulders for an aesthetically pleasing and meaningful end result.',
+			'The website utilizes an array of visuals to depict natural gardens that features designs that capture the essence of Japanese gardens.',
+			'Experienced professionals from the company will help homeowners bring their visions to life with skilled consulting.',
+			'The website also features a portfolio of projects completed by the company, so visitors can get an idea of what they can expect from the company.',
+		],
+		tech: ['Javascript', 'React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+		images: {
+			mobile: livinglandscapesPhone,
+			desktop: livinglandscapesDesktop,
+		},
+
+		imageAlt: 'image of the Living landscapes Landscapes website',
+		github: 'https://github.com/LSLandscapes/living-landscapes-landscapes',
+	},
 	{
 		name: 'Movie Connection',
 		featured: true,
@@ -42,24 +64,22 @@ export const websites = [
 		github: 'https://github.com/latz09/movie-connection',
 	},
 	{
-		name: 'Living Space Landscapes',
-		featured: true,
-		gif: livinglandscapesGif,
-		url: 'https://livingspacelandscapes.vercel.app/',
+		name: 'Erik Nelson Plumbing',
+		featured: false,
+		url: 'https://eriknelson.vercel.app/',
 		description: [
-			'This website is designed to tell the story of a landscaping company that specializes in Japanese style gardening while also incorporating stones and boulders for an aesthetically pleasing and meaningful end result.',
-			'The website utilizes an array of visuals to depict natural gardens that features designs that capture the essence of Japanese gardens.',
-			'Experienced professionals from the company will help homeowners bring their visions to life with skilled consulting.',
-			'The website also features a portfolio of projects completed by the company, so visitors can get an idea of what they can expect from the company.',
+			'This website was created for a plumbing business and features a modern, clean interface.',
+			'The website has a user-friendly navigation system and is optimized for both desktop and mobile devices. The websites design has a minimalist look with clear, bold colors and readable fonts.',
+			'It also provides easy access to customer reviews and customer testimonials.',
 		],
-		tech: ['Javascript', 'React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+		tech: ['JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
 		images: {
-			mobile: livinglandscapesPhone,
-			desktop: livinglandscapesDesktop,
+			mobile: erikNelsonPhone,
+			desktop: erikNelsonDesktop,
 		},
 
-		imageAlt: 'image of the Living landscapes Landscapes website',
-		github: 'https://github.com/LSLandscapes/living-landscapes-landscapes',
+		imageAlt: 'image of the Sweet JuanJos website',
+		github: 'https://github.com/latz09/juanjos',
 	},
 	{
 		name: 'Sweet JuanJos',
